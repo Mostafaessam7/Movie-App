@@ -4,4 +4,4 @@
 - all links in the navbar work
 - form validation
 
-website link : https://ahmed15reda.github.io/movieApp/
+website link : https://mostafaessam7.github.io/Movie-App/
