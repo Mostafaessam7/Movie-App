@@ -1,4 +1,4 @@
-# movieApp
+# Movie-App
 
 - using moviedb api 
 - all links in the navbar work
