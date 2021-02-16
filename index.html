@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/976938fa09.js" crossorigin="anonymous"></script>
+
+    <title>Movie</title>
+</head>
+
+<body>
+    <section>
+        <div id="head-nav" class="header-nav">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div id="toggle" class="toggle-menu">
+                <i id="open-close" class="fa fa-align-justify"></i>
+            </div>
+            <div class="social-icons">
+                <div>
+                    <span>
+                        <i class="fas fa-globe"></i>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <i class="fas fa-share-alt"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="side-nav" class="nav-menu">
+            <div class="nav-item">
+                <ul>
+                    <li style="opacity: 0; padding-top: 500px;"><a id="now_playing"  class="nav-category" href="#">Now playing</a></li>
+                    <li style="opacity: 0; padding-top: 500px;"><a id="popular" class="nav-category" href="#">Popular</a></li>
+                    <li style="opacity: 0; padding-top: 500px;"><a id="top_rated" class="nav-category" href="#">Top Rated</a></li>
+                    <li style="opacity: 0; padding-top: 500px;"><a id="trending" class="nav-category" href="#">Trending</a></li>
+                    <li style="opacity: 0; padding-top: 500px;"><a id="upcoming" class="nav-category" href="#">Upcoming</a></li>
+                    <li style="opacity: 0; padding-top: 500px;"><a  class="nav-category" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="social-item">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fas fa-globe"></i></a>
+                <div class="pt-3">
+                    <span>Copyright Â© 2019 All Rights Reserved.</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-5">
+        <div class="container w-75">
+            <div class="row">
+                <div class="col-md-6">
+                    <input onkeyup="searchMovie(this.value)" id="allMovies" class="form-control mb-5"
+                        placeholder="get movies by word...">
+                </div>
+                <div class="col-md-6">
+                    <input onkeyup="searchByWord(this.value)" class="form-control " id="word" placeholder="search...">
+                </div>
+            </div>
+            <div class="row" id="res">
+
+            </div>
+            <div class="row" id="rowData">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container myM w-75 mx-auto my-5 ">
+        <h2 class="text-light my-5">ContacUs...</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control" id="name" placeholder="Enter Your Name">
+                    <div id="namealert"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control" id="email" placeholder="Enter Email">
+                    <div id="emailalert"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control" id="phone" placeholder="Enter phone">
+                    <div id="phonealert"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control" id="age" placeholder="Enter Age">
+                    <div id="agealert"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control" type="password" id="password" placeholder="Enter Password">
+                    <div id="passwordalert"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control" type="password" id="rePassword" placeholder="Enter RePassword">
+                    <div id="repasswordalert"></div>
+                </div>
+            </div>
+        </div>
+        <button type="submit" id="submitBtn" class="btn btn-outline-danger d-inline-block">Submit</button>
+        <p id="inputs_required"></p>
+    </section>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
